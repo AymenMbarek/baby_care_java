@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Baby Name</title>
+    <link rel="stylesheet" href="resources/bootstrap.min.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">BabyCare</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="ViewBabyName">Baby Names</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="Admin">Admin</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h1>Add Baby Name</h1>
+
+    <form action="AddBabyName" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="meaning">Meaning:</label>
+            <input type="text" class="form-control" id="meaning" name="meaning" required>
+        </div>
+        <div class="form-group">
+            <label for="sex">Sex:</label>
+            <select class="form-control" id="sex" name="sex" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="religion">Region:</label>
+            <select class="form-control" id="religion" name="religion" required>
+                <option value="Ariana">Ariana</option>
+                <option value="Béja">Béja</option>
+                <option value="Ben Arous">Ben Arous</option>
+                <option value="Bizerte">Bizerte</option>
+                <option value="Gabès">Gabès</option>
+                <option value="Gafsa">Gafsa</option>
+                <option value="Jendouba">Jendouba</option>
+                <option value="Kairouan">Kairouan</option>
+                <option value="Kasserine">Kasserine</option>
+                <option value="Kébili">Kébili</option>
+                <option value="Kef">Kef</option>
+                <option value="Mahdia">Mahdia</option>
+                <option value="Manouba">Manouba</option>
+                <option value="Médenine">Médenine</option>
+                <option value="Monastir">Monastir</option>
+                <option value="Nabeul">Nabeul</option>
+                <option value="Sfax">Sfax</option>
+                <option value="Sidi Bouzid">Sidi Bouzid</option>
+                <option value="Siliana">Siliana</option>
+                <option value="Sousse">Sousse</option>
+                <option value="Tataouine">Tataouine</option>
+                <option value="Tozeur">Tozeur</option>
+                <option value="Tunis">Tunis</option>
+                <option value="Zaghouan">Zaghouan</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="dateNaissance">Date of Birth:</label>
+            <input type="date" class="form-control" id="dateNaissance" name="dateNaissance">
+        </div>
+        <div class="form-group">
+            <label for="photo">Photo:</label>
+            <input type="file" class="form-control" id="photo" name="photo">
+        </div>
+        <div class="form-group">
+            <label for="contactParent">Parent Contact:</label>
+            <input type="text" class="form-control" id="contactParent" name="contactParent">
+        </div>
+        <div class="form-group">
+            <label for="nomParent">Parent Name:</label>
+            <input type="text" class="form-control" id="nomParent" name="nomParent">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Baby</button>
+    </form>
+</div>
+
+<script src="resources/jquery.min.js"></script>
+<script src="resources/bootstrap.min.js"></script>
+</body>
+</html>
